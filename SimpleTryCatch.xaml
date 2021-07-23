@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SimpleTryCatch" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="947,790" sap2010:WorkflowViewState.IdRef="SimpleTryCatch_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SimpleTryCatch" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="947,1164" sap2010:WorkflowViewState.IdRef="SimpleTryCatch_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
       <x:String>System.Activities</x:String>
@@ -55,7 +55,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SimpleTryCatch" sap:VirtualizedContainerService.HintSize="480,625" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SimpleTryCatch" sap:VirtualizedContainerService.HintSize="606,999" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtExcel" />
       <Variable x:TypeArguments="x:String" Name="dtString" />
@@ -65,7 +65,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,338" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="564,610" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <ui:ReadRange AddHeaders="True" DataTable="[dtExcel]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Dummy.xlsx">
           <ui:ReadRange.Range>
@@ -76,7 +76,7 @@
         </ui:ReadRange>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="530,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -92,21 +92,33 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <ui:CloseApplication DisplayName="Close Application 'Button  Close'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
-          <ui:CloseApplication.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e534a23b-3fa6-4450-9052-d82e5ff49238" InformativeScreenshot="f6ec681ad0228f53535e70bd067c19c3" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Dummy.xlsx - Excel' /&gt;&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIAppFrameHelper' name='Close' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:CloseApplication.Target>
-        </ui:CloseApplication>
+        <Sequence sap:VirtualizedContainerService.HintSize="526,378" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If Condition="[exc]" sap:VirtualizedContainerService.HintSize="484,286" sap2010:WorkflowViewState.IdRef="If_1">
+            <If.Then>
+              <ui:CloseApplication DisplayName="Close Application 'Button  Close'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+                <ui:CloseApplication.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e534a23b-3fa6-4450-9052-d82e5ff49238" InformativeScreenshot="f6ec681ad0228f53535e70bd067c19c3" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Dummy.xlsx - Excel' /&gt;&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIAppFrameHelper' name='Close' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:CloseApplication.Target>
+              </ui:CloseApplication>
+            </If.Then>
+          </If>
+        </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <ui:OutputDataTable DataTable="[dtExcel]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[dtString]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;DT String = &quot; + dtString]" />
+    <ui:OutputDataTable DataTable="[dtExcel]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="564,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[dtString]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="564,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;DT String = &quot; + dtString]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="564,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Test" />
   </Sequence>
 </Activity>
