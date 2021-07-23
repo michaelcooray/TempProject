@@ -1,0 +1,126 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ModernUI" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="947,1110" sap2010:WorkflowViewState.IdRef="ModernUI_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ModernUI" sap:VirtualizedContainerService.HintSize="476,945" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Orchestrator'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="f1f34ac5950e545f170a514247ba595d" Selector="&lt;html app='chrome.exe' title='Latest &amp;amp; Breaking News Melbourne, Victoria | The Age' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="390a243b-0d86-45bd-9531-309eebf6864e" InformativeScreenshot="467deeabf3ed93e3a7dd4a1c15f7a8f9" Selector="&lt;webctrl aaname='Watch live: NSW records 136 new local cases amid ‘national emerg*' parentid='content' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Chrome: Latest &amp; Breaking News Melbourne, Victoria | The Age" sap:VirtualizedContainerService.HintSize="434,469" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,252" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="334,159" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-13, -13, 3866, 2106" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAARISURBVHhe7Vs9aBRBFN5GDGoOQUjhD1ibFHZeYSmxsAw2VhZWFikECwmC2JnKLtiIpY0gqQSLNIIgBFKJXGWl6bTJ3a2i637j+5a5y8tl9+3N7l6yDz6ym5l9733f/OzMHBu11lo+G5yMLg870au4E/381YmSOpDG34nno7uSUnUWn4qu1kl8HGgISS28oeVJPl6YiwePHw77nz4me3t71eH7t2Tw5nUyvNH97YvwI4rOSprhDIEc+Qtn/lZOXMHw3h2/J+wEFyEL9vSRmlAdqFQEBmpC6/uoTAQG0ZKoG5WI0GQBgOAiNF0AIKgIsyAAMHj5IowIsyIAMC6CUChnsyQA4IuQLpufCA27hRAgG7MX513CWp0yGN6+9V+ATvRVaNht2gL0379z/vyJq//ls1rXCqxZ6Fto2I2OtEAWYEVJf3F3yV2H6AXMW2jYjY60IBaMCHDzursOscxm3kLDbnSkBbHAF4C+j5UA2NaSNH3jf1rdMqBvoWE3OtKCmJDu7Z3P9A1A3yE2WvQtNOxGR1oQKzj2HVIhtDplQf9Cw250pAWxYvD8WZYg3tlanbKgf6FhNzrSglgxsnkJMAEC9C807EZHWhATOAcQGALp/9S6JUD/QsNudKQFscDv/pwIQwwDxhAadqMjLYgF8ZVLWXIQg/fTHgqMITTsRkdakKLgPsBBZn+3bpeegCUx6hAQyF0bXpOMIzTsRkdakKLwX39ocRDze8FEpCIV2TPwOaFhNzrSghTBSOtrkF4ADB/cd+Jgl4jnfOHy7hxZX2jYjY60IHkBMtz5ZUgJY/Jz3V66uKsnvQGksUQGYe7vAQgy7l8D6wsNu9GRFuQwjLeeA7rypLV/+kp0+wSvR/jP5n1l8hmhYTc60oIcCJBgq4GIR6bIOHa/B6ZiAK6nFDg4YTyhYTc60oJoQDcmYYxlJE4f6A3aMyHAmELDbnSkBdkHrPKkxfn6ylo//RtixXcQahGAqzxHHuOfrzcRRHsmFJi30LAbHWlBxkEB/FnbkZdZvkowvtCwGx1pQfYh7eIji51UiDrIA8xBaNiNjrQgTUYrQCtAK0ArQCtAnQKsr68ni4uLDt1uN1ldXU12d3fVsrW1tawMYBmBZ1mWF40RYHNzM9nY2MhEOKhsZWUle5akUQ5sbW1lZXnRGAF4j1YGUa0MIuCeRHGNOiy3YKYEAHAPIXh9ZASYNAT8+j5pXPuAD79uHjRGAADk/YluXIBer+fu/R7gzwH+BJkXjREgTxnngO3tbXePa/YGK2ZCALQurtlDWH5sBACWl5f3kT0SAtSNVoBpC1DXyY4FOD6fugBFzvPrhn8ULzTsNpRvhuo63CwK/yg+7kRvhYbd3Fdj5070KYL7VRdH3BWe8R+KNBfk5P+khpzxuZ/QKGfuu8GFudiJMANArlP/wNJ9OXpt6UN8/vQfLWgTgNyQI3KVtFtrrbVJFkX/APni5UN8hE5YAAAAAElFTkSuQmCC" InformativeScreenshot="0db6307cd9d029fcf093bb6129212536.png" Selector="&lt;html app='chrome.exe' title='Latest &amp;amp; Breaking News Melbourne, Victoria | The Age'/&gt;" Url="https://www.theage.com.au/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
